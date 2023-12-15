@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: consolas;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(tomato, blue);
+}
+.clock {
+  position: relative;
+  width: 720px;
+  height: 250px;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 9;
+}
+.clock .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  /* background-color: aqua; */
+  /* 7nt khda gha height li m7taj jrb tbdl back color atfhm */
+}
+.clock .wrapper h2 {
+  font-size: 6rem;
+  color: #fff;
+}
+.clock .wrapper h2:nth-child(odd) {
+  border-radius: 10px;
+  margin: 0 10px;
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 5px 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+#ampm {
+  position: relative;
+  font-size: 2rem;
+  color: #f6ff00;
+  top: -50px;
+  font-weight: 700;
+}
